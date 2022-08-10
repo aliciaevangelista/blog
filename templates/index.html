@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Contatos </title>
+        </head>
+        <body>
+            <a href="https://aliciaevangelista.github.io/PortfolioAliciaEvangelista/"> Clique para ir ao Portfólio no GitHub </a>
+            {% if usuario[2] == "Estudante" %}
+                <h2> Bem-vindo, Estudante {{usuario[1]}}</h2> 
+            {%else%}
+                <h2>Bem-vindo, Professor</h2>
+            {%endif%}
+ 
+            {%for aluno in alunos %}
+            <h3>{{aluno}}</h3>
+            {%endfor%}
+
+            <h1> {{nome}} </h1>
+            <h1>Alícia Duarte Evangelista</h1>
+            <h2>alicia@email.com</h2>
+            <h3>(00) 0 0000-0000</h3>
+        </body>
+    </html>
